@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900&display=swap');
+
+:root {
+  --color-purple: #7E57C5;
+  --color-purple-dark: #412D66;
+  --color-purple-darkest: #201633;
+  --color-green: #5AB946;
+  --color-orange: #F58732;
+  --color-red: #ED0034;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-lightest: #fcfcfc;
+  --color-gray-light: #dfdfdf;
+  --color-gray: #cfcfcf;
+  --spacer: 15px;
+  --font-family-sourcesanspro: 'Source Sans Pro', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-sourcesanspro);
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 1.42;
+
+  background: var(--color-black);
+  color: var(--color-gray-lightest);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-sourcesanspro);
+
+  font-weight: 900;
+  line-height: 1.42;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+  font-size: 0.8rem; 
+}
+
+table > tbody > tr {
+  border-bottom: 1px solid var(--color-gray-lightest);
+}
+
+table > tbody > tr > td {
+  padding: calc(var(--spacer) / 2);
+  border-right: 1px solid var(--color-gray-lightest);
+}
+
+.countries > * {
+  margin-bottom: calc(var(--spacer)*2);
+}
